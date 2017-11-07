@@ -1,0 +1,140 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-image:url("../img/paisaje.jpg");
+}
+
+/* Primera Sección, primer cuadro con los datos del reto de Código*/
+
+
+.encabezado {
+	width: 100%;
+	height: 50px;
+	background-color:#33ccff;
+}
+
+.central {
+	display: block; 
+}
+
+.container {
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+.primerCuadro {
+	background-color: #fff;
+	width: 500px;
+	height: 250px;
+	color: #000;
+	margin-left: 120px; 
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.primerCuadro h2 {
+	padding-left: 30px;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+.primerCuadro p {
+	padding-left: 30px;
+	font-size: 16px;
+}
+
+#azul {
+	padding-left: 30px;
+	padding-top: 50px;
+	font-size: 17px;
+	color: blue;
+}
+
+/* Segunda Sección, segundo cuadro con los datos con el parrafo a ingresar*/
+
+.area{
+	display: inline-block;
+}
+
+
+.segundoCuadro {
+	background-color: #fff;
+	width: 500px;
+	height: 150px;
+	color: #000;
+	margin-right: 150px; 
+	margin-top: 10px;
+	
+}
+
+.txt {
+	border:0;
+	width: 90%;
+	margin-left: 10px;
+	margin-top: 10px;
+	line-height: 30px;
+	font-family:arial;
+	font-size: 12px;
+}
+
+/* Desactivar el borde del textarea cuando recibe el focus */
+textarea:focus {
+	border:0;
+	outline: none;
+}
+
+.hr-activado {
+  border-color: #33ccff;
+  width: 90%;
+  margin-left: 10px;
+}
+
+.hr-desactivado {
+	border-color:#ccc;
+	width: 90%;
+	margin-left: 10px;
+}
+
+
+.boton-activado {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 10px;
+	background-color: #33ccff;
+	color:#fff;
+}
+
+.boton-desactivado {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 10px;
+	background-color: #ccc;
+	color:#000;
+}
+
+.contador {
+	float:right;
+	margin-right: 40px;
+	color:#33ccff;
+}
+
+
+#cont {
+	width: 73%;
+	margin-left: 121px;
+	margin-top: 40px;
+	border:1px;
+
+}
+
+#cont div{
+	margin-top: 10px;
+	background-color: #fff;
+}
+
+
