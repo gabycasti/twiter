@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Twiter</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Bree+Serif" rel="stylesheet">
 </head>
 <body>
 
@@ -11,27 +12,28 @@
 	
 	<header>
 		<div class = "encabezado">
+		<span>TWITER</span> 
         </div>
 	</header>
     
     <div class="central">
     <section class="container">
 			<div class="primerCuadro">
-				<p>Reto de Código</p>
-				<p>Hola</p>
-				<p>Soy Front-end developer jr.</p>
+				<p class="first">Reto de Código</p>
+				<p class="second">Hola</p>
+				<p class="second">Soy Front-end developer jr.</p>
 				<p id="azul">Código</p>
 		    </div>
 
     </section>	
 
 	<section class= "area">	
-			<div class="segundoCuadro">
+			<div id="texto" class="segundoCuadro">
 				<textarea class="txt" id="comment" placeholder="Añade un comentario..."></textarea>
 				<hr class="hr-activado">
 				<button class="boton-desactivado" type="button" id="btn" disabled="true"><i class="fa fa-plus" aria-hidden="true"></i> Agregar</button>
 
-				<div id="contador" class="contador">140</div>
+				<div id="contador" class="contador"></div>
 
 				<!--Contenedor de Comentarios-->
 				

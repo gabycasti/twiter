@@ -5,11 +5,15 @@ var boton = document.getElementById('btn');
 
 boton.addEventListener('click',function(){
 
+
 //obtener el texto del textarea
 var comentario = document.getElementById('comment').value;
+var contador = document.getElementById('btn');
 
+document.getElementById('contador').innerHTML=140;
 //Limpio la caja de texto
 document.getElementById('comment').value="";
+document.getElementById('comment').focus();
 document.getElementById('btn').disabled=true;
 document.getElementById('btn').className = 'boton-desactivado';
 //obtener el contenedor donde se agregan los comentarios
@@ -27,8 +31,12 @@ var txtFecha = document.createTextNode(new Date());
 //Creo el parrafo para el texto
 var contenedorElemento = document.createElement('p');
 
+
+
 //Coloco el texto(nodo) dentro del parrafo
 contenedorElemento.appendChild(textNuevoComentario);
+
+contenedorElemento.className = 'parrafo';
 
 
 //Creo el parrafo para la fecha
@@ -36,6 +44,7 @@ var contenedorFecha = document.createElement('p');
 
 //Coloco la fecha dentro del parrafo
 contenedorFecha.appendChild(txtFecha);
+contenedorFecha.className = 'fecha';
 
 
 // Meto el parrafo dentro del nuevo div que es su padre
@@ -52,6 +61,17 @@ contenedor.appendChild(nuevoComentario);
 
 })
 
+// agranda o reduce el alto del textarea
+var textarea = document.getElementById("comment");
+var newtexto = document.getElementById("texto");
+var limit = 200;
+
+textarea.oninput = function() {
+  textarea.style.height = "";
+  textarea.style.height = Math.min(textarea.scrollHeight, 300) + "px";
+  newtexto.style.height = (Math.min(textarea.scrollHeight, 300) + 80) + "px";
+
+};
 
 
 //Validación de la caja de Texto
@@ -78,7 +98,21 @@ comentario.addEventListener('keyup',function(){
 		document.getElementById('contador').innerHTML=restante;
 	}
 
-  
+
+	if (comentario.value.length > 120 && comentario.value.length < 130) {
+		document.getElementById('contador').className ='contador_red';
+		
+	}
+
+   if (comentario.value.length > 130) {
+		document.getElementById('contador').className ='contador_yellow';
+		
+	}
+
+	if (comentario.value.length > 140){
+		document.getElementById('btn').disabled=true;
+	}
+
   
 
 })
