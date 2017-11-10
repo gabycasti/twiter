@@ -124,6 +124,7 @@ textarea:focus {
 	margin-left: 10px;
 }
 
+/* Estilos Boton Activado*/
 
 .boton-activado {
 	padding-top: 6px;
@@ -135,6 +136,7 @@ textarea:focus {
 	color:#fff;
 }
 
+/* Estilos Boton Desactivado*/
 .boton-desactivado {
 	padding-top: 6px;
 	padding-bottom: 6px;
@@ -146,7 +148,7 @@ textarea:focus {
 }
 
 
-
+/* Estilos para el contador*/
 .contador {
 	float:right;
 	margin-right: 40px;
@@ -170,10 +172,8 @@ textarea:focus {
 	width: 73%;
 	margin-left: 121px;
 	margin-top: 40px;
-	
-
-
 }
+
 
 #cont div{
 	margin-top: 10px;
@@ -182,11 +182,13 @@ textarea:focus {
 	font-size: 12px;
 }
 
+/* Estilos Para el parrafo inferior*/
 .parrafo{
 	margin-left: 5px;
 	width: 200px;
 }
 
+/* Estilos Para la fecha del parrafo inferior*/
 .fecha{
 	margin-left: 5px;
 	width: 200px;
